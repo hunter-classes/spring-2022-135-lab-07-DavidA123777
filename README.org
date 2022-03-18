@@ -1,20 +1,30 @@
 * Spring 2022 - Lab 07
 
-* Last name:
+* Last name: Abushlaih
 
-* First name:
+* First name: David
 
-* GitHub username:
+* GitHub username: DavidA123777
 
-* Notes:
+* Notes: My code takes input from a file called bad-code.cpp and uses main.cpp to test the calls. Functions are located in unindent.cpp and unindent.h.
+My code writes new code onto a file called new-code.cpp. The function countChar was done a bit differently than the main lab, as I determined if there was
+a {. If there was a { I returned 1 and returned -1 if it had a }, as a way of incrementing or decrementing the number of tabs I need for the next line.
+
+Errors: 1. The function removeLeadingSpaces works, except that it seems to condense the line of code to not include any spaces,
+
+2. In order to try to reindent the lines of code I saved them to a variable called temp, and concatenated a tab for however many tabs were in the line based on {}.
+ The part I was unable to figure out was how to do tabs for the next line of code after the {.
+
+For example, a line that has int main(){ should not be indented but the following line should be,
+yet my code indents both that line and the following line to the same position. I think it has something to do with reading one line at a time through my while loop.
 
 
-  
+
 * General instructions:
 - Fill in your name and GitHub username on top.
 - Use the Notes section to add any notes to the instructor.
 - The main lab description can be found here:
-  https://maryash.github.io/135/labs/lab_07.html 
+  https://maryash.github.io/135/labs/lab_07.html
 
 
 * Specific instructions for lab 07
@@ -28,7 +38,7 @@ Even though you will decide on what and how to implement your
 solution, the lab *must* include the following:
 
 1. There *must* be a ~Makefile~ that has at least the following
-   targets: 
+   targets:
    1. ~main~ to build an executable named ~main~.
    2. ~clean~ which will get rid of ~.o~ files.
    3. If you are using ~doctest.h~ you should have a ~tests~ target but
@@ -39,6 +49,3 @@ solution, the lab *must* include the following:
    produces.
 4. If I need to know anything, please write it in the *Notes:* section
    above.
-
-
-
