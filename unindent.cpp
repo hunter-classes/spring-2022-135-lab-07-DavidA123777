@@ -9,7 +9,13 @@
 std::string removeLeadingSpaces(std::string line){
 
 std::string result = "";
+int count = 0;
+while(line[count] ==  ' '){
+  count += 1;
+}
+result = line.substr(count, line.size());
 
+/*
 for (int i = 0; i < line.length();i++){
   char c = line[i];
   int x = 0;
@@ -22,7 +28,7 @@ for (int i = 0; i < line.length();i++){
   if(x == 1)
   {
     result = result + c;
-  }}
+  }}*/
 
   //std::cout << result << std::endl;
   return result;
