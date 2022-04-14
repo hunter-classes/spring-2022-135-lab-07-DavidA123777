@@ -10,6 +10,20 @@ myfile.open("bad-code.cpp", std::ios::in);
 std::fstream newfile;
 newfile.open("new-code.cpp", std::ios::out);
 
+
+if (myfile.is_open()){
+  std::string line;
+
+  std::string temp = "";
+
+  while (getline(myfile, line)){
+    std::cout << line << std::endl;}
+  }
+  myfile.close();
+  myfile.open("bad-code.cpp", std::ios::in);
+
+
+
 int tab = 0;
 if (myfile.is_open()){
   std::string line;
