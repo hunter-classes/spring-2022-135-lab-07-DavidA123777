@@ -1,22 +1,22 @@
-#include <iostream>
-#include <iostream>
-using namespace std;
-using namespace std;
+#include<iostream>
+#include<iostream>
+usingnamespacestd;
+usingnamespacestd;
 
 
-int main(){
-int main(){
-		int x = 1;
-		int x = 1;
-		for(int i = 0; i < 10; i++){
-		for(int i = 0; i < 10; i++){
-			cout << i;
-			cout << i;
-			cout << endl;
-			cout << endl;
+intmain(){
+intmain(){
+		intx=1;
+		intx=1;
+		for(inti=0;i<10;i++){
+		for(inti=0;i<10;i++){
+			cout<<i;
+			cout<<i;
+			cout<<endl;
+			cout<<endl;
 			}
 			}
-		return 0;
-		return 0;
+		return0;
+		return0;
 		}
 		}
