@@ -49,6 +49,7 @@ return result;
 
 }*/
 
+/*
 
 int countChar(std::string line){
   int count = 0;
@@ -62,3 +63,4 @@ int countChar(std::string line){
   }
 return count;
 }
+*/
