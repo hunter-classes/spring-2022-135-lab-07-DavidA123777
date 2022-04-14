@@ -8,6 +8,7 @@ std::string file_to_change;
 std::cout << "Enter file to change: " << std::endl;
 std::cin >> file_to_change;
 std::fstream myfile;
+
 myfile.open(file_to_change, std::ios::in);
 std::fstream newfile;
 newfile.open("new-code.cpp", std::ios::out);
